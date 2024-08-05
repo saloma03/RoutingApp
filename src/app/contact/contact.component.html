@@ -1,0 +1,104 @@
+<section>
+  <div class="bg-white mt-20 p-20">
+    <div class="container mx-auto py-5">
+
+      <div class="py-2 text-center">
+        <h1 class="uppercase font-bold text-4xl text-[#2C3E50]">contact section</h1>
+      </div>
+      <div class="flex justify-center items-center">
+        <div class="bg-[#2C3E50] h-1 w-24"></div>
+        <div class="px-2"><i class="fa-solid fa-star text-[#2C3E50]"></i></div>
+        <div class="bg-[#2C3E50] h-1 w-24"></div>
+      </div>
+      <div class="w-6/12 mx-auto">
+        <div class="flex flex-col justify-center items-center">
+          <div class="w-full h-20 py-4 relative">
+            <input
+              type="text"
+              id="name"
+              placeholder="user name"
+              class="px-2 border-b-2 border-gray-200 h-full focus:outline-none w-full"
+              [(ngModel)]="nameValue"
+            >
+            <label
+              for="name"
+              class="absolute top-0 left-0 text-[#1ABC9C] transition-all duration-300"
+              [class.opacity-0]="!nameValue"
+              [class.opacity-1]="nameValue"
+              [class.-top-3]="nameValue"
+              [class.top-0]="!nameValue"
+            >
+              user name
+            </label>
+          </div>
+
+          <div class="w-full h-20 py-4 relative">
+            <input
+              type="number"
+              id="age"
+              placeholder="user age"
+              class="px-2 border-b-2 border-gray-200 h-full focus:outline-none w-full"
+              [(ngModel)]="ageValue"
+            >
+            <label
+              for="age"
+              class="absolute top-0 left-0 text-[#1ABC9C] transition-all duration-300"
+              [class.opacity-0]="!ageValue"
+              [class.opacity-1]="ageValue"
+              [class.-top-3]="ageValue"
+              [class.top-0]="!ageValue"
+            >
+              user age
+            </label>
+          </div>
+
+          <div class="w-full h-20 py-4 relative">
+            <input
+              type="text"
+              id="email"
+              placeholder="user email"
+              class="px-2 border-b-2 border-gray-200 h-full focus:outline-none w-full"
+              [(ngModel)]="emailValue"
+            >
+            <label
+              for="email"
+              class="absolute top-0 left-0 text-[#1ABC9C] transition-all duration-300"
+              [class.opacity-0]="!emailValue"
+              [class.opacity-1]="emailValue"
+              [class.-top-3]="emailValue"
+              [class.top-0]="!emailValue"
+            >
+              user email
+            </label>
+          </div>
+
+          <div class="w-full h-20 py-4 relative">
+            <input
+              type="text"
+              id="password"
+              placeholder="user password"
+              class="px-2 border-b-2 border-gray-200 h-full focus:outline-none w-full"
+              [(ngModel)]="passwordValue"
+            >
+            <label
+              for="password"
+              class="absolute top-0 left-0 text-[#1ABC9C] transition-all duration-300"
+              [class.opacity-0]="!passwordValue"
+              [class.opacity-1]="passwordValue"
+              [class.-top-3]="passwordValue"
+              [class.top-0]="!passwordValue"
+            >
+              user password
+            </label>
+          </div>
+
+          <div class="self-start py-4">
+            <button class="capitalize   px-3 bg-[#1ABC9C] text-white rounded-lg py-2 x scale-100" [class.scale-95]="btnClicked" (click)="btnAnimate()">
+              send message
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
